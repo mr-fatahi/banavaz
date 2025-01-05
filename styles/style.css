@@ -36,7 +36,7 @@ h3 {
 }
 /* Container */
 .block {
-  padding: 4px 6px;
+  padding: 1rem 2rem;
 }
 .container {
   max-width: 1140px;
@@ -64,6 +64,11 @@ h3 {
   background-color: transparent;
   border: 1px solid var(--color-white);
   color: var(--color-white);
+}
+.btn--secondary-light {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
 }
 .btn--secondary-dark {
   background-color: var(--color-white);
@@ -136,4 +141,38 @@ h3 {
   .header__action-button > .app {
     display: block;
   }
+}
+/* Overview */
+.overview {
+  background-color: var(--color-primary);
+}
+/* Introduction */
+.introduction{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.introduction__image{
+  padding-top: 4rem;
+  position: relative;
+  width: 85vw;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+.introduction__image .home{
+  width: 80%;
+  position: relative;
+  top: 50px;
+}
+.introduction__image .phone{
+  width: 32%;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+.introduction__content{
+  color: var(--color-white);
+}
+.introduction__content .title{
+  color: inherit;
 }

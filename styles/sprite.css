@@ -1,0 +1,60 @@
+.bg-animals {
+  width: 156px;
+  height: 201px;
+  background: url('css_sprites.png') -633px -10px;
+}
+.bg-app_store {
+  width: 324px;
+  height: 96px;
+  background: url('css_sprites.png') -10px -298px;
+}
+.bg-door {
+  width: 184px;
+  height: 234px;
+  background: url('css_sprites.png') -242px -10px;
+}
+.bg-earth {
+  width: 35px;
+  height: 35px;
+  background: url('css_sprites.png') -633px -447px;
+}
+.bg-electric {
+  width: 128px;
+  height: 196px;
+  background: url('css_sprites.png') -633px -231px;
+}
+.bg-flower {
+  width: 167px;
+  height: 167px;
+  background: url('css_sprites.png') -10px -530px;
+}
+.bg-google_play {
+  width: 324px;
+  height: 96px;
+  background: url('css_sprites.png') -10px -414px;
+}
+.bg-heat {
+  width: 167px;
+  height: 212px;
+  background: url('css_sprites.png') -446px -10px;
+}
+.bg-instagram {
+  width: 35px;
+  height: 35px;
+  background: url('css_sprites.png') -688px -447px;
+}
+.bg-light {
+  width: 212px;
+  height: 268px;
+  background: url('css_sprites.png') -10px -10px;
+}
+.bg-twitter {
+  width: 31px;
+  height: 27px;
+  background: url('css_sprites.png') -446px -242px;
+}
+.bg-youtube {
+  width: 35px;
+  height: 25px;
+  background: url('css_sprites.png') -743px -447px;
+}
