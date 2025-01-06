@@ -16,6 +16,7 @@
   --color-primary: #2cb6e2;
   --color-primary-dark: #0e5d80;
   --radius-md: 8px;
+  --shadow-soft: 0 7px 10px rgba(0, 0, 0, 0.1);
 }
 /* Typography */
 html {
@@ -29,9 +30,21 @@ h2,
 h3 {
   color: var(--color-black);
 }
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
 @media screen and (min-width: 768px) {
   body {
     font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.5rem;
   }
 }
 /* Container */
@@ -49,6 +62,7 @@ h3 {
   border: 0;
   border-radius: var(--radius-md);
   padding: 1rem 2rem;
+  font-weight: bold;
 }
 .btn--primary {
   background-color: var(--color-primary);
@@ -147,32 +161,54 @@ h3 {
   background-color: var(--color-primary);
 }
 /* Introduction */
-.introduction{
+.introduction {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.introduction__image{
+.introduction__image {
   padding-top: 4rem;
   position: relative;
   width: 85vw;
+  max-width: 500px;
   text-align: center;
   margin-bottom: 7rem;
 }
-.introduction__image .home{
+.introduction__image .home {
   width: 80%;
   position: relative;
   top: 50px;
 }
-.introduction__image .phone{
+.introduction__image .phone {
   width: 32%;
   position: absolute;
   top: 30px;
   right: 40px;
 }
-.introduction__content{
+.introduction__content {
   color: var(--color-white);
 }
-.introduction__content .title{
+.introduction__content .title {
   color: inherit;
+}
+.introduction__content button {
+  margin: 1rem 0;
+}
+@media screen and (min-width: 768px) {
+  .introduction {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .introduction__image {
+    order: 1;
+  }
+  .introduction__content button {
+    box-shadow: var(--shadow-soft);
+  }
+}
+/* Category */
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 0.5em;background-color: white;
 }
