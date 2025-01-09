@@ -212,7 +212,7 @@ h2 {
   .introduction__image {
     order: 1;
   }
-  .introduction__content .title{
+  .introduction__content .title {
     margin-bottom: 3rem;
   }
   .introduction__content button {
@@ -221,19 +221,19 @@ h2 {
   }
 }
 /* Category */
-.categories{
+.categories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 3rem;
   margin-bottom: 3rem;
 }
-.category{
+.category {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
 }
-.category__image{
+.category__image {
   background-color: var(--color-white);
   width: 15vw;
   height: 15vw;
@@ -246,40 +246,87 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-.category__image use{
+.category__image use {
   width: 100%;
   height: 100%;
 }
-.category__title{
+.category__title {
   color: var(--color-white);
   font-weight: bold;
 }
-@media screen and (min-width:768px) {
-  .categories{
+@media screen and (min-width: 768px) {
+  .categories {
     display: flex;
     justify-content: space-between;
   }
 }
 /* Controller */
-.controller{
+.controller {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5rem;
-  margin-bottom: 3rem;
 }
-.controller__image{
+.controller__image {
   width: 85vw;
   max-width: 700px;
 }
-.controller__image > img{
+.controller__image > img {
   width: 100%;
 }
-@media screen and (min-width:768px) {
-  .controller__image{
+@media screen and (min-width: 768px) {
+  .controller__image {
     order: 1;
   }
-  .controller__content{
+  .controller__content {
     max-width: 50vw;
+  }
+}
+/* Features */
+.overview + .feature-container {
+  background-color: #eee;
+}
+.feature {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.feature__image.kid {
+  width: 50vw;
+  max-width: 450px;
+  height: 300px;
+}
+.feature__image.phone {
+  width: 45vw;
+  max-width: 250px;
+  padding: 2.5rem;
+}
+.feature__image.phone > img {
+  width: 100%;
+}
+.feature__image.kid > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+}
+.feature__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.feature__content .title {
+  color: var(--color-primary-dark);
+}
+.feature__content .btn {
+  align-self: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .feature {
+    justify-content: space-around;
+  }
+  .feature__content {
+    gap: 4rem;
   }
 }
